@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit 3 Project - Owen Brasch</title>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js"></script>
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Unit 3 Project - Owen Brasch</h1>
+    <h2>The "Chordposer"</h2>
+    <p>
+      The Chordposer is a Web based MIDI plug-in that takes any single MIDI
+      pitch value and plays a chord. You can adjust the chord quality and
+      transposition amount below.
+    </p>
+    <hr />
+
+    <!-- MIDI Input and Output Boxes -->
+    <label for="Dropdown Inputs">Select a Midi Input</label>
+    <select id="Dropdown Inputs">
+      <!-- THESE ARE BACKWARDS AND IDK WHY -->
+      <!-- Options will be added by script.js -->
+    </select>
+
+    <label for="Dropdown Outputs">Select a Midi Output</label>
+    <select id="Dropdown Outputs">
+      <!-- THESE ARE BACKWARDS AND IDK WHY -->
+      <!-- Options will be added by script.js -->
+    </select>
+
+    <!-- Transposition Slider -->
+    <h4>
+      <u>Set Transposition Amount</u>
+      <div class="slider container">
+        <input type="range" id="transSlider" min="-127" max="127" value="0" />
+      </div>
+      <div class="value container">
+        <p><span id="transDisplay">0</span> semitones</p>
+      </div>
+    </h4>
+
+    <!-- Chord Quality Input -->
+    <label for="chordQuality">Select a Chord Quality</label>
+    <select id="chordQuality">
+      <!-- Options will be added by script.js -->
+    </select>
+  </body>
+</html>
